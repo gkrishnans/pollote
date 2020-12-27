@@ -1,0 +1,33 @@
+
+container
+{
+    flex:1;
+    justify-content:center;
+    padding:1;
+    border-bottom-color: black;  
+}
+inputs
+{
+    margin: 15;
+    height: 40;
+    border-color: '#ADD8E6';
+    border-width: 1;
+    color:blue;
+}
+
+logo 
+{
+    width: 66;
+    height: 58;
+}
+item
+{
+    font-size:10;
+}
+apoll
+{
+    margin-top: 10px;
+    padding:30;
+    background-color: powderblue;
+}
+
