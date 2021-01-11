@@ -137,4 +137,6 @@ const styles = StyleSheet.create(
       backgroundColor:'#ff5c5c',
       }
       })
-    
+ 
+      module.exports = Subpoll      
+
