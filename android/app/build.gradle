@@ -128,7 +128,6 @@ android {
     buildToolsVersion "29.0.2"
     compileSdkVersion 29 //added
 
-
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -143,7 +142,7 @@ android {
         //minSdkVersion rootProject.ext.minSdkVersion
         //targetSdkVersion rootProject.ext.targetSdkVersion
 
-        versionCode 1
+        versionCode 1             
         versionName "1.0"
         multiDexEnabled true //important //<added> which comes for the failed for task apptransformcalsseswithdexforrelease
 
@@ -194,11 +193,14 @@ android {
 }
 
 dependencies {
+
     implementation fileTree(dir: "libs", include: ["*.jar"])
     //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules
 
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
+
+  //  implementation project(':react-native-fs')
 
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
       exclude group:'com.facebook.fbjni'
